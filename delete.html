@@ -27,12 +27,12 @@
             return jsonObj;
         }
         function deleteData(){
-            var token = "90937136|";
-            var dbname = "CourseData";
-            var relationName = "Candidate-Data";
+            var token = "90937380|-31949298398212547|90943288";
+            var dbname = "Student";
+            var relationName = "Student-Rel";
             var roll = parseInt(document.getElementById("rollno").value);
 
-            var reqString = createREMOVERecordRequest(token, dbname, relationName, roll);
+            var reqString = createREMOVERecordRequest(token, dbname, relationName, id);
             alert(reqString);
             jQuery.ajaxSetup({async: false});
             var resultObj = executeCommand(reqString,
